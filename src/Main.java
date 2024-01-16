@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class Main
+public class Main//тело программы, включает в себя методы которые отвечают за определённые этапы игры
 {
     public static void main(String[] args) throws IOException
     {

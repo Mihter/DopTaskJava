@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class ConsoleInput //ввод консоли
+public class ConsoleInput //Работаю с вводом консоли считываю данные
 {
     private static String num;
     private static String random;
@@ -21,11 +21,9 @@ public class ConsoleInput //ввод консоли
         BufferedReader br = new BufferedReader(isr);
 
         System.out.print("Input a number: ");
-        //Scanner in = new Scanner(System.in);
         String _num = br.readLine();
 
         num = InputService.checkAndNext(_num);//проверяю на кол-во цифр в числе
-        //num = _num;
 
         System.out.printf("Your number: %s \n", _num);
 
@@ -41,7 +39,8 @@ public class ConsoleInput //ввод консоли
         return random;
     }
 
-    public static void printBullsAndCows() throws IOException {
+    public static void printBullsAndCows() throws IOException//метод , который будет рекурсивно вызываться для подсчёта Коров и быков
+    {
 
         BullsAndCow.calcCows(random, num);
     }

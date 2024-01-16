@@ -8,21 +8,4 @@ public class Pair<T1, T2>//создаём пару в которой храни�
         this.second = _second;
     }
 
-    //String getCowsAndBulls()
-    //{
-    //    String result = String.format("%s Cows\t %s Bulls", first,second);
-    //    return result;
-    //}
-
-    //T1 getFirst()
-    //{
-    //    T1 cows = first;
-    //    return cows;
-    //}
-
-    //T2 getSecond()
-    //{
-    //   T2 bulls = second;
-    //    return bulls;
-    //}
 }
