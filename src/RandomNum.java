@@ -1,9 +1,9 @@
 import java.util.Random;
 
-public class RandomNum
+public class RandomNum//ответственет за получение рандомного числа и хранит его единственную версию
 {
-    public static final Integer NUM_NUMS = 9999;
-    final String RANDOM;
+    public static final Integer NUM_NUMS = 9999;//правая грпница рандомного числа от 0 до 9999
+    final String RANDOM;//рандомное число
     public RandomNum()
     {
         RANDOM = getRandomNum();
@@ -15,7 +15,7 @@ public class RandomNum
         return String.format("%04d", random);
     }
 
-    public String getNumber()
+    public String getNumber()//позволяет получать другим классам доступ к значению поля RANDOM
     {
         return RANDOM;
     }

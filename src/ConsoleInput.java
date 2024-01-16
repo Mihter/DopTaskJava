@@ -14,11 +14,6 @@ public class ConsoleInput //ввод консоли
         num = _num;
     }
 
-    public static void welcome()
-    {
-        System.out.println("Welcome in Bull Cow Game!!!");
-        System.out.printf("Random number: %s \n", random);
-    }
 
     public static void printNum() throws IOException
     {
@@ -41,9 +36,9 @@ public class ConsoleInput //ввод консоли
         random = _random;
     }
 
-    public static String getNum()
+    public static String getRandom()
     {
-        return num;
+        return random;
     }
 
     public static void printBullsAndCows() throws IOException {

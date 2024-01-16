@@ -1,6 +1,7 @@
 import java.io.IOException;
 
-public class BullsAndCow //смотрим сколько быков и коров в вновь введённом числе
+public class BullsAndCow //смотрим сколько быков и коров в вновь введённом число
+// ответственность этого класса, следить за состоянием игры
 {
     private static Integer cows;
     private static Integer bulls;
@@ -49,17 +50,15 @@ public class BullsAndCow //смотрим сколько быков и коро�
         return count;
     }
 
-    static void isWin(Integer nBulls) throws IOException
+    static void isWin(Integer nBulls) throws IOException//позволяет отследить текущее состояние, и если надо повторить ввод
     {
-
+        OutputService.infoCowsAndBulls();
         if (nBulls ==4)
         {
-            OutputService.infoCowsAndBulls();
             OutputService.sendWin();
         }
         else
         {
-            OutputService.infoCowsAndBulls();
             ConsoleInput.printNum();
             ConsoleInput.printBullsAndCows();
         }
